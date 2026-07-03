@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CCBees — Customer Engagement & Call Center Solutions | Visakhapatnam</title>
+<meta name="description" content="CCBees runs inbound support, outbound sales and lead generation for growing brands — a 24/7, AI-assisted call center team based in Visakhapatnam, India."/>
+<meta property="og:title" content="CCBees — Customer Engagement & Call Center Solutions"/>
+<meta property="og:description" content="Inbound support, outbound sales and lead generation, delivered by a busy hive of trained agents from Visakhapatnam."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="assets/og-image.png"/>
+<meta property="og:url" content="https://www.ccbees.in"/>
+<link rel="icon" href="images\ccbees-favicon.png" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="images\ccbees-favicon.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --ink:#16213E; --ink2:#1E2C4F; --ink3:#0F1830; --honey:#F2A900; --honey-l:#FFC83D; --honey-d:#D98E04;
+  --paper:#FFFFFF; --tint:#FFF6E2; --tint2:#FBF1DA; --slate:#5B6472; --text:#1F2733; --line:#ECE4D2;
+  --ink-soft:#C9CEDA; --radius:16px; --wrap:1200px; --shadow:0 14px 40px rgba(22,33,62,.10);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth} html:focus-within{scroll-padding-top:90px}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;color:var(--text);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.display{font-family:Sora,Inter,system-ui,sans-serif;letter-spacing:-.02em;line-height:1.08;margin:0}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+img,svg{display:block}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.ic{width:1.5rem;height:1.5rem;fill:currentColor}
+.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--honey-d)}
+.section{padding:96px 0}
+.section--tint{background:var(--tint)}
+.section--ink{background:var(--ink);color:#fff}
+.section--ink .eyebrow{color:var(--honey-l)}
+.section-head{max-width:720px;margin-bottom:48px}
+.section-head h2{font-size:clamp(1.9rem,4vw,2.7rem);font-weight:800;margin:12px 0 14px}
+.section-head p{color:var(--slate);font-size:1.06rem}
+.section--ink .section-head p{color:var(--ink-soft)}
+
+/* hexagon icon badge */
+.hex{width:56px;height:62px;display:grid;place-items:center;flex:none;
+  background:linear-gradient(180deg,var(--honey-l),var(--honey-d));
+  clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);color:var(--ink)}
+.hex .ic{width:1.6rem;height:1.6rem}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:Sora;font-weight:700;font-size:.98rem;
+  padding:14px 24px;border-radius:999px;transition:transform .15s ease,box-shadow .2s ease,background .2s;cursor:pointer;border:0}
+.btn .ic{width:1.05rem;height:1.05rem}
+.btn-primary{background:var(--honey);color:var(--ink);box-shadow:0 8px 22px rgba(242,169,0,.35)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(242,169,0,.45)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.35)}
+.btn-ghost:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.6)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{transform:translateY(-2px);background:var(--ink2)}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;gap:24px;height:72px}
+.brand{display:flex;align-items:center;gap:10px;font-family:Sora;font-weight:800;font-size:1.45rem;color:var(--ink);letter-spacing:-.03em}
+.brand .mark{width:38px;height:38px}
+.brand b{color:var(--honey-d);font-weight:800}
+.nav{display:flex;gap:28px;margin-left:auto}
+.nav a{font-weight:600;font-size:.95rem;color:var(--text);opacity:.82}
+.nav a:hover{opacity:1;color:var(--honey-d)}
+.hdr .btn{padding:11px 20px}
+.hdr-cta{margin-left:8px}
+.burger{display:none;margin-left:auto;background:none;border:0;padding:8px;cursor:pointer;color:var(--ink)}
+.burger .ic{width:1.6rem;height:1.6rem}
+
+/* hero */
+.hero{position:relative;background:radial-gradient(120% 120% at 80% 0,#1E2C4F 0,var(--ink) 55%,var(--ink3) 100%);color:#fff;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczNDUnIGhlaWdodD0nMzE5JyBvcGFjaXR5PScwLjUnPjxwYXRoIGQ9Ik05Mi4wLDQ2LjBMNjkuMCw4NS44TDIzLjAsODUuOEwwLjAsNDYuMEwyMy4wLDYuMkw2OS4wLDYuMloiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0YyQTkwMCIgc3Ryb2tlLXdpZHRoPSIyLjQiLz48cGF0aCBkPSJNOTIuMCwxMjUuN0w2OS4wLDE2NS41TDIzLjAsMTY1LjVMMC4wLDEyNS43TDIzLjAsODUuOEw2OS4wLDg1LjhaIiBmaWxsPSJub25lIiBzdHJva2U9IiNGMkE5MDAiIHN0cm9rZS13aWR0aD0iMi40Ii8+PHBhdGggZD0iTTkyLjAsMjA1LjNMNjkuMCwyNDUuMkwyMy4wLDI0NS4yTDAuMCwyMDUuM0wyMy4wLDE2NS41TDY5LjAsMTY1LjVaIiBmaWxsPSJub25lIiBzdHJva2U9IiNGMkE5MDAiIHN0cm9rZS13aWR0aD0iMi40Ii8+PHBhdGggZD0iTTkyLjAsMjg1LjBMNjkuMCwzMjQuOUwyMy4wLDMyNC45TDAuMCwyODUuMEwyMy4wLDI0NS4yTDY5LjAsMjQ1LjJaIiBmaWxsPSJub25lIiBzdHJva2U9IiNGMkE5MDAiIHN0cm9rZS13aWR0aD0iMi40Ii8+PHBhdGggZD0iTTkyLjAsMzY0LjdMNjkuMCw0MDQuNUwyMy4wLDQwNC41TDAuMCwzNjQuN0wyMy4wLDMyNC45TDY5LjAsMzI0LjlaIiBmaWxsPSJub25lIiBzdHJva2U9IiNGMkE5MDAiIHN0cm9rZS13aWR0aD0iMi40Ii8+PHBhdGggZD0iTTE2MS4wLDg1LjhMMTM4LjAsMTI1LjdMOTIuMCwxMjUuN0w2OS4wLDg1LjhMOTIuMCw0Ni4wTDEzOC4wLDQ2LjBaIiBmaWxsPSJub25lIiBzdHJva2U9IiNGMkE5MDAiIHN0cm9rZS13aWR0aD0iMi40Ii8+PHBhdGggZD0iTTE2MS4wLDE2NS41TDEzOC4wLDIwNS4zTDkyLjAsMjA1LjNMNjkuMCwxNjUuNUw5Mi4wLDEyNS43TDEzOC4wLDEyNS43WiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRjJBOTAwIiBzdHJva2Utd2lkdGg9IjIuNCIvPjxwYXRoIGQ9Ik0xNjEuMCwyNDUuMkwxMzguMCwyODUuMEw5Mi4wLDI4NS4wTDY5LjAsMjQ1LjJMOTIuMCwyMDUuM0wxMzguMCwyMDUuM1oiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0YyQTkwMCIgc3Ryb2tlLXdpZHRoPSIyLjQiLz48cGF0aCBkPSJNMTYxLjAsMzI0LjlMMTM4LjAsMzY0LjdMOTIuMCwzNjQuN0w2OS4wLDMyNC45TDkyLjAsMjg1LjBMMTM4LjAsMjg1LjBaIiBmaWxsPSJub25lIiBzdHJva2U9IiNGMkE5MDAiIHN0cm9rZS13aWR0aD0iMi40Ii8+PHBhdGggZD0iTTE2MS4wLDQwNC41TDEzOC4wLDQ0NC40TDkyLjAsNDQ0LjRMNjkuMCw0MDQuNUw5Mi4wLDM2NC43TDEzOC4wLDM2NC43WiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRjJBOTAwIiBzdHJva2Utd2lkdGg9IjIuNCIvPjxwYXRoIGQ9Ik0yMzAuMCw0Ni4wTDIwNy4wLDg1LjhMMTYxLjAsODUuOEwxMzguMCw0Ni4wTDE2MS4wLDYuMkwyMDcuMCw2LjJaIiBmaWxsPSJub25lIiBzdHJva2U9IiNGMkE5MDAiIHN0cm9rZS13aWR0aD0iMi40Ii8+PHBhdGggZD0iTTIzMC4wLDEyNS43TDIwNy4wLDE2NS41TDE2MS4wLDE2NS41TDEzOC4wLDEyNS43TDE2MS4wLDg1LjhMMjA3LjAsODUuOFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0YyQTkwMCIgc3Ryb2tlLXdpZHRoPSIyLjQiLz48cGF0aCBkPSJNMjMwLjAsMjA1LjNMMjA3LjAsMjQ1LjJMMTYxLjAsMjQ1LjJMMTM4LjAsMjA1LjNMMTYxLjAsMTY1LjVMMjA3LjAsMTY1LjVaIiBmaWxsPSJub25lIiBzdHJva2U9IiNGMkE5MDAiIHN0cm9rZS13aWR0aD0iMi40Ii8+PHBhdGggZD0iTTIzMC4wLDI4NS4wTDIwNy4wLDMyNC45TDE2MS4wLDMyNC45TDEzOC4wLDI4NS4wTDE2MS4wLDI0NS4yTDIwNy4wLDI0NS4yWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRjJBOTAwIiBzdHJva2Utd2lkdGg9IjIuNCIvPjxwYXRoIGQ9Ik0yMzAuMCwzNjQuN0wyMDcuMCw0MDQuNUwxNjEuMCw0MDQuNUwxMzguMCwzNjQuN0wxNjEuMCwzMjQuOUwyMDcuMCwzMjQuOVoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0YyQTkwMCIgc3Ryb2tlLXdpZHRoPSIyLjQiLz48cGF0aCBkPSJNMjk5LjAsODUuOEwyNzYuMCwxMjUuN0wyMzAuMCwxMjUuN0wyMDcuMCw4NS44TDIzMC4wLDQ2LjBMMjc2LjAsNDYuMFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0YyQTkwMCIgc3Ryb2tlLXdpZHRoPSIyLjQiLz48cGF0aCBkPSJNMjk5LjAsMTY1LjVMMjc2LjAsMjA1LjNMMjMwLjAsMjA1LjNMMjA3LjAsMTY1LjVMMjMwLjAsMTI1LjdMMjc2LjAsMTI1LjdaIiBmaWxsPSJub25lIiBzdHJva2U9IiNGMkE5MDAiIHN0cm9rZS13aWR0aD0iMi40Ii8+PHBhdGggZD0iTTI5OS4wLDI0NS4yTDI3Ni4wLDI4NS4wTDIzMC4wLDI4NS4wTDIwNy4wLDI0NS4yTDIzMC4wLDIwNS4zTDI3Ni4wLDIwNS4zWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRjJBOTAwIiBzdHJva2Utd2lkdGg9IjIuNCIvPjxwYXRoIGQ9Ik0yOTkuMCwzMjQuOUwyNzYuMCwzNjQuN0wyMzAuMCwzNjQuN0wyMDcuMCwzMjQuOUwyMzAuMCwyODUuMEwyNzYuMCwyODUuMFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0YyQTkwMCIgc3Ryb2tlLXdpZHRoPSIyLjQiLz48cGF0aCBkPSJNMjk5LjAsNDA0LjVMMjc2LjAsNDQ0LjRMMjMwLjAsNDQ0LjRMMjA3LjAsNDA0LjVMMjMwLjAsMzY0LjdMMjc2LjAsMzY0LjdaIiBmaWxsPSJub25lIiBzdHJva2U9IiNGMkE5MDAiIHN0cm9rZS13aWR0aD0iMi40Ii8+PHBhdGggZD0iTTM2OC4wLDQ2LjBMMzQ1LjAsODUuOEwyOTkuMCw4NS44TDI3Ni4wLDQ2LjBMMjk5LjAsNi4yTDM0NS4wLDYuMloiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0YyQTkwMCIgc3Ryb2tlLXdpZHRoPSIyLjQiLz48cGF0aCBkPSJNMzY4LjAsMTI1LjdMMzQ1LjAsMTY1LjVMMjk5LjAsMTY1LjVMMjc2LjAsMTI1LjdMMjk5LjAsODUuOEwzNDUuMCw4NS44WiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRjJBOTAwIiBzdHJva2Utd2lkdGg9IjIuNCIvPjxwYXRoIGQ9Ik0zNjguMCwyMDUuM0wzNDUuMCwyNDUuMkwyOTkuMCwyNDUuMkwyNzYuMCwyMDUuM0wyOTkuMCwxNjUuNUwzNDUuMCwxNjUuNVoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0YyQTkwMCIgc3Ryb2tlLXdpZHRoPSIyLjQiLz48cGF0aCBkPSJNMzY4LjAsMjg1LjBMMzQ1LjAsMzI0LjlMMjk5LjAsMzI0LjlMMjc2LjAsMjg1LjBMMjk5LjAsMjQ1LjJMMzQ1LjAsMjQ1LjJaIiBmaWxsPSJub25lIiBzdHJva2U9IiNGMkE5MDAiIHN0cm9rZS13aWR0aD0iMi40Ii8+PHBhdGggZD0iTTM2OC4wLDM2NC43TDM0NS4wLDQwNC41TDI5OS4wLDQwNC41TDI3Ni4wLDM2NC43TDI5OS4wLDMyNC45TDM0NS4wLDMyNC45WiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRjJBOTAwIiBzdHJva2Utd2lkdGg9IjIuNCIvPjxwYXRoIGQ9Ik00MzcuMCw4NS44TDQxNC4wLDEyNS43TDM2OC4wLDEyNS43TDM0NS4wLDg1LjhMMzY4LjAsNDYuMEw0MTQuMCw0Ni4wWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRjJBOTAwIiBzdHJva2Utd2lkdGg9IjIuNCIvPjxwYXRoIGQ9Ik00MzcuMCwxNjUuNUw0MTQuMCwyMDUuM0wzNjguMCwyMDUuM0wzNDUuMCwxNjUuNUwzNjguMCwxMjUuN0w0MTQuMCwxMjUuN1oiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0YyQTkwMCIgc3Ryb2tlLXdpZHRoPSIyLjQiLz48cGF0aCBkPSJNNDM3LjAsMjQ1LjJMNDE0LjAsMjg1LjBMMzY4LjAsMjg1LjBMMzQ1LjAsMjQ1LjJMMzY4LjAsMjA1LjNMNDE0LjAsMjA1LjNaIiBmaWxsPSJub25lIiBzdHJva2U9IiNGMkE5MDAiIHN0cm9rZS13aWR0aD0iMi40Ii8+PHBhdGggZD0iTTQzNy4wLDMyNC45TDQxNC4wLDM2NC43TDM2OC4wLDM2NC43TDM0NS4wLDMyNC45TDM2OC4wLDI4NS4wTDQxNC4wLDI4NS4wWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRjJBOTAwIiBzdHJva2Utd2lkdGg9IjIuNCIvPjxwYXRoIGQ9Ik00MzcuMCw0MDQuNUw0MTQuMCw0NDQuNEwzNjguMCw0NDQuNEwzNDUuMCw0MDQuNUwzNjguMCwzNjQuN0w0MTQuMCwzNjQuN1oiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0YyQTkwMCIgc3Ryb2tlLXdpZHRoPSIyLjQiLz48L3N2Zz4=');background-size:360px;opacity:.5;mask-image:radial-gradient(120% 90% at 85% 10%,#000,transparent 70%)}
+.hero .wrap{position:relative;padding:96px 24px 104px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(242,169,0,.14);color:var(--honey-l);border:1px solid rgba(242,169,0,.3);
+  font-weight:600;font-size:.85rem;padding:7px 14px;border-radius:999px;margin-bottom:22px}
+.hero-pill .dot{width:8px;height:8px;border-radius:50%;background:var(--honey);box-shadow:0 0 0 4px rgba(242,169,0,.25)}
+.hero h1{font-size:clamp(2.4rem,5.2vw,4rem);font-weight:800}
+.hero h1 span{color:var(--honey)}
+.hero-sub{margin:22px 0 30px;font-size:1.15rem;color:var(--ink-soft);max-width:34ch}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:40px;max-width:440px}
+.stat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:16px 18px}
+.stat b{font-family:Sora;font-size:1.5rem;color:var(--honey-l);display:block}
+.stat span{font-size:.85rem;color:var(--ink-soft)}
+/* hero hive */
+.hive{position:relative;height:420px}
+.hive .cell{position:absolute;width:132px;height:146px;display:grid;place-items:center;
+  clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.hive .c-honey{background:linear-gradient(180deg,var(--honey-l),var(--honey-d));color:var(--ink)}
+.hive .c-ink{background:linear-gradient(180deg,#26375f,#1a2846);color:var(--honey-l);border:0}
+.hive .cell .ic{width:2.6rem;height:2.6rem}
+.hive .c1{top:20px;left:120px} .hive .c2{top:110px;left:24px} .hive .c3{top:110px;left:216px}
+.hive .c4{top:200px;left:120px} .hive .c5{top:290px;left:24px} .hive .c6{top:290px;left:216px}
+@media(prefers-reduced-motion:no-preference){.hive .cell{animation:float 6s ease-in-out infinite}
+.hive .c2{animation-delay:.6s}.hive .c3{animation-delay:1.2s}.hive .c4{animation-delay:.3s}.hive .c5{animation-delay:.9s}.hive .c6{animation-delay:1.5s}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+/* trusted */
+.trusted{background:var(--ink3);color:#fff;padding:30px 0}
+.trusted .wrap{display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:center}
+.trusted small{color:var(--ink-soft);font-weight:600;letter-spacing:.04em}
+.chip{font-family:Sora;font-weight:700;font-size:1rem;color:#fff;opacity:.9;padding:8px 16px;border:1px solid rgba(255,255,255,.16);border-radius:10px}
+
+/* grids */
+.grid{display:grid;gap:20px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .2s}
+.section--tint .card{background:#fff}
+.card:hover{transform:translateY(-4px);box-shadow:0 20px 46px rgba(22,33,62,.14)}
+.card h3{font-size:1.18rem;font-weight:700;margin:18px 0 8px;color:var(--ink)}
+.card p{color:var(--slate);font-size:.96rem}
+.card.ev{background:var(--ink);border-color:var(--ink)}
+.card.ev h3{color:#fff}.card.ev p{color:var(--ink-soft)}
+.card.ev .tag{display:inline-block;margin-top:12px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);background:var(--honey);padding:4px 10px;border-radius:999px}
+
+/* models */
+.model{position:relative}
+.model .best{margin-top:14px;font-size:.82rem;font-weight:700;color:var(--honey-d)}
+.model.feat{background:var(--ink);border-color:var(--ink)}
+.model.feat h3{color:#fff}.model.feat p{color:var(--ink-soft)}.model.feat .best{color:var(--honey-l)}
+
+/* process */
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.step{position:relative;padding:26px 20px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:Sora;font-weight:800;font-size:1.5rem;
+  color:var(--honey);display:block;margin-bottom:10px}
+.step h3{font-size:1.05rem;color:var(--ink);margin-bottom:6px}
+.step p{color:var(--slate);font-size:.9rem}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.c-list{display:grid;gap:14px;margin-top:26px}
+.c-item{display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:16px 18px}
+.c-item .hex{width:48px;height:53px}.c-item .hex .ic{width:1.3rem;height:1.3rem}
+.c-item small{display:block;color:var(--honey-l);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.72rem}
+.c-item b{font-family:Sora;font-weight:700;font-size:1.08rem}
+.form{background:#fff;color:var(--text);border-radius:20px;padding:30px;box-shadow:0 24px 60px rgba(0,0,0,.3)}
+.form h3{color:var(--ink);font-size:1.35rem;margin-bottom:6px}
+.form p.small{color:var(--slate);font-size:.9rem;margin-bottom:18px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px}
+.field input,.field textarea{width:100%;font:inherit;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--text)}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--honey);box-shadow:0 0 0 3px rgba(242,169,0,.18)}
+.form .btn{width:100%;justify-content:center;margin-top:4px}
+
+/* footer */
+.foot{background:var(--ink3);color:var(--ink-soft);padding:56px 0 28px}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,.1)}
+.foot .brand{color:#fff;margin-bottom:14px}
+.foot h4{color:#fff;font-family:Sora;font-size:.95rem;letter-spacing:.05em;text-transform:uppercase;margin:0 0 14px}
+.foot a{display:block;padding:5px 0;color:var(--ink-soft);font-size:.95rem}
+.foot a:hover{color:var(--honey-l)}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:22px;font-size:.85rem}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* responsive */
+@media(max-width:960px){
+  .nav,.hdr-cta{display:none}.burger{display:block}
+  .hero .wrap{grid-template-columns:1fr;padding:64px 24px 72px}.hive{display:none}
+  .g3,.g4,.steps,.contact-grid,.foot-top{grid-template-columns:1fr}
+  .g3.svc,.g4.models{grid-template-columns:1fr}
+  .section{padding:68px 0}
+  .nav.open{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;background:#fff;border-bottom:1px solid var(--line);padding:12px 24px;gap:6px;margin:0}
+  .nav.open a{padding:10px 0}
+}
+@media(min-width:601px) and (max-width:960px){.g3,.g4,.steps{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="ic-support" viewBox="0 0 512 512"><path d="M160 288h-16c-35.35 0-64 28.7-64 64.12v63.76c0 35.41 28.65 64.12 64 64.12h16c17.67 0 32-14.36 32-32.06V320.06c0-17.71-14.33-32.06-32-32.06zm208 0h-16c-17.67 0-32 14.35-32 32.06v127.88c0 17.7 14.33 32.06 32 32.06h16c35.35 0 64-28.71 64-64.12v-63.76c0-35.41-28.65-64.12-64-64.12zM256 32C112.91 32 4.57 151.13 0 288v112c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16V288c0-114.67 93.33-207.8 208-207.82 114.67.02 208 93.15 208 207.82v112c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16V288C507.43 151.13 399.09 32 256 32z"></path></symbol><symbol id="ic-headset" viewBox="0 0 512 512"><path d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z"></path></symbol><symbol id="ic-bullhorn" viewBox="0 0 576 512"><path d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"></path></symbol><symbol id="ic-funnel" viewBox="0 0 512 512"><path d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z"></path></symbol><symbol id="ic-chat" viewBox="0 0 576 512"><path d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z"></path></symbol><symbol id="ic-layers" viewBox="0 0 512 512"><path d="M12.41 148.02l232.94 105.67c6.8 3.09 14.49 3.09 21.29 0l232.94-105.67c16.55-7.51 16.55-32.52 0-40.03L266.65 2.31a25.607 25.607 0 0 0-21.29 0L12.41 107.98c-16.55 7.51-16.55 32.53 0 40.04zm487.18 88.28l-58.09-26.33-161.64 73.27c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.51 209.97l-58.1 26.33c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 276.3c16.55-7.5 16.55-32.5 0-40zm0 127.8l-57.87-26.23-161.86 73.37c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.29 337.87 12.41 364.1c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 404.1c16.55-7.5 16.55-32.5 0-40z"></path></symbol><symbol id="ic-users" viewBox="0 0 640 512"><path d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"></path></symbol><symbol id="ic-clock" viewBox="0 0 512 512"><path d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></symbol><symbol id="ic-ai" viewBox="0 0 640 512"><path d="M32,224H64V416H32A31.96166,31.96166,0,0,1,0,384V256A31.96166,31.96166,0,0,1,32,224Zm512-48V448a64.06328,64.06328,0,0,1-64,64H160a64.06328,64.06328,0,0,1-64-64V176a79.974,79.974,0,0,1,80-80H288V32a32,32,0,0,1,64,0V96H464A79.974,79.974,0,0,1,544,176ZM264,256a40,40,0,1,0-40,40A39.997,39.997,0,0,0,264,256Zm-8,128H192v32h64Zm96,0H288v32h64ZM456,256a40,40,0,1,0-40,40A39.997,39.997,0,0,0,456,256Zm-8,128H384v32h64ZM640,256V384a31.96166,31.96166,0,0,1-32,32H576V224h32A31.96166,31.96166,0,0,1,640,256Z"></path></symbol><symbol id="ic-rupee" viewBox="0 0 320 512"><path d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z"></path></symbol><symbol id="ic-rocket" viewBox="0 0 512 512"><path d="M505.12019,19.09375c-1.18945-5.53125-6.65819-11-12.207-12.1875C460.716,0,435.507,0,410.40747,0,307.17523,0,245.26909,55.20312,199.05238,128H94.83772c-16.34763.01562-35.55658,11.875-42.88664,26.48438L2.51562,253.29688A28.4,28.4,0,0,0,0,264a24.00867,24.00867,0,0,0,24.00582,24H127.81618l-22.47457,22.46875c-11.36521,11.36133-12.99607,32.25781,0,45.25L156.24582,406.625c11.15623,11.1875,32.15619,13.15625,45.27726,0l22.47457-22.46875V488a24.00867,24.00867,0,0,0,24.00581,24,28.55934,28.55934,0,0,0,10.707-2.51562l98.72834-49.39063c14.62888-7.29687,26.50776-26.5,26.50776-42.85937V312.79688c72.59753-46.3125,128.03493-108.40626,128.03493-211.09376C512.07526,76.5,512.07526,51.29688,505.12019,19.09375ZM384.04033,168A40,40,0,1,1,424.05,128,40.02322,40.02322,0,0,1,384.04033,168Z"></path></symbol><symbol id="ic-expand" viewBox="0 0 448 512"><path d="M448 344v112a23.94 23.94 0 0 1-24 24H312c-21.39 0-32.09-25.9-17-41l36.2-36.2L224 295.6 116.77 402.9 153 439c15.09 15.1 4.39 41-17 41H24a23.94 23.94 0 0 1-24-24V344c0-21.4 25.89-32.1 41-17l36.19 36.2L184.46 256 77.18 148.7 41 185c-15.1 15.1-41 4.4-41-17V56a23.94 23.94 0 0 1 24-24h112c21.39 0 32.09 25.9 17 41l-36.2 36.2L224 216.4l107.23-107.3L295 73c-15.09-15.1-4.39-41 17-41h112a23.94 23.94 0 0 1 24 24v112c0 21.4-25.89 32.1-41 17l-36.19-36.2L263.54 256l107.28 107.3L407 327.1c15.1-15.2 41-4.5 41 16.9z"></path></symbol><symbol id="ic-signal" viewBox="0 0 640 512"><path d="M216 288h-48c-8.84 0-16 7.16-16 16v192c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V304c0-8.84-7.16-16-16-16zM88 384H40c-8.84 0-16 7.16-16 16v96c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16v-96c0-8.84-7.16-16-16-16zm256-192h-48c-8.84 0-16 7.16-16 16v288c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V208c0-8.84-7.16-16-16-16zm128-96h-48c-8.84 0-16 7.16-16 16v384c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V112c0-8.84-7.16-16-16-16zM600 0h-48c-8.84 0-16 7.16-16 16v480c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V16c0-8.84-7.16-16-16-16z"></path></symbol><symbol id="ic-shield" viewBox="0 0 512 512"><path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"></path></symbol><symbol id="ic-ev" viewBox="0 0 576 512"><path d="M336 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h320c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zm208-320V80c0-8.84-7.16-16-16-16s-16 7.16-16 16v48h-32V80c0-8.84-7.16-16-16-16s-16 7.16-16 16v48h-16c-8.84 0-16 7.16-16 16v32c0 35.76 23.62 65.69 56 75.93v118.49c0 13.95-9.5 26.92-23.26 29.19C431.22 402.5 416 388.99 416 372v-28c0-48.6-39.4-88-88-88h-8V64c0-35.35-28.65-64-64-64H96C60.65 0 32 28.65 32 64v352h288V304h8c22.09 0 40 17.91 40 40v24.61c0 39.67 28.92 75.16 68.41 79.01C481.71 452.05 520 416.41 520 372V251.93c32.38-10.24 56-40.17 56-75.93v-32c0-8.84-7.16-16-16-16h-16zm-283.91 47.76l-93.7 139c-2.2 3.33-6.21 5.24-10.39 5.24-7.67 0-13.47-6.28-11.67-12.92L167.35 224H108c-7.25 0-12.85-5.59-11.89-11.89l16-107C112.9 99.9 117.98 96 124 96h68c7.88 0 13.62 6.54 11.6 13.21L192 160h57.7c9.24 0 15.01 8.78 10.39 15.76z"></path></symbol><symbol id="ic-building" viewBox="0 0 448 512"><path d="M436 480h-20V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v456H12c-6.627 0-12 5.373-12 12v20h448v-20c0-6.627-5.373-12-12-12zM128 76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76zm0 96c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40zm52 148h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12zm76 160h-64v-84c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v84zm64-172c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40z"></path></symbol><symbol id="ic-edu" viewBox="0 0 640 512"><path d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path></symbol><symbol id="ic-gov" viewBox="0 0 512 512"><path d="M501.62 92.11L267.24 2.04a31.958 31.958 0 0 0-22.47 0L10.38 92.11A16.001 16.001 0 0 0 0 107.09V144c0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16v-36.91c0-6.67-4.14-12.64-10.38-14.98zM64 192v160H48c-8.84 0-16 7.16-16 16v48h448v-48c0-8.84-7.16-16-16-16h-16V192h-64v160h-96V192h-64v160h-96V192H64zm432 256H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"></path></symbol><symbol id="ic-cart" viewBox="0 0 576 512"><path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path></symbol><symbol id="ic-share" viewBox="0 0 448 512"><path d="M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 0 0 0-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 0 0 256 416c0 53.019 42.981 96 96 96s96-42.981 96-96-42.981-96-96-96z"></path></symbol><symbol id="ic-usertie" viewBox="0 0 448 512"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm95.8 32.6L272 480l-32-136 32-56h-96l32 56-32 136-47.8-191.4C56.9 292 0 350.3 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-72.1-56.9-130.4-128.2-133.8z"></path></symbol><symbol id="ic-gears" viewBox="0 0 640 512"><path d="M512.1 191l-8.2 14.3c-3 5.3-9.4 7.5-15.1 5.4-11.8-4.4-22.6-10.7-32.1-18.6-4.6-3.8-5.8-10.5-2.8-15.7l8.2-14.3c-6.9-8-12.3-17.3-15.9-27.4h-16.5c-6 0-11.2-4.3-12.2-10.3-2-12-2.1-24.6 0-37.1 1-6 6.2-10.4 12.2-10.4h16.5c3.6-10.1 9-19.4 15.9-27.4l-8.2-14.3c-3-5.2-1.9-11.9 2.8-15.7 9.5-7.9 20.4-14.2 32.1-18.6 5.7-2.1 12.1.1 15.1 5.4l8.2 14.3c10.5-1.9 21.2-1.9 31.7 0L552 6.3c3-5.3 9.4-7.5 15.1-5.4 11.8 4.4 22.6 10.7 32.1 18.6 4.6 3.8 5.8 10.5 2.8 15.7l-8.2 14.3c6.9 8 12.3 17.3 15.9 27.4h16.5c6 0 11.2 4.3 12.2 10.3 2 12 2.1 24.6 0 37.1-1 6-6.2 10.4-12.2 10.4h-16.5c-3.6 10.1-9 19.4-15.9 27.4l8.2 14.3c3 5.2 1.9 11.9-2.8 15.7-9.5 7.9-20.4 14.2-32.1 18.6-5.7 2.1-12.1-.1-15.1-5.4l-8.2-14.3c-10.4 1.9-21.2 1.9-31.7 0zm-10.5-58.8c38.5 29.6 82.4-14.3 52.8-52.8-38.5-29.7-82.4 14.3-52.8 52.8zM386.3 286.1l33.7 16.8c10.1 5.8 14.5 18.1 10.5 29.1-8.9 24.2-26.4 46.4-42.6 65.8-7.4 8.9-20.2 11.1-30.3 5.3l-29.1-16.8c-16 13.7-34.6 24.6-54.9 31.7v33.6c0 11.6-8.3 21.6-19.7 23.6-24.6 4.2-50.4 4.4-75.9 0-11.5-2-20-11.9-20-23.6V418c-20.3-7.2-38.9-18-54.9-31.7L74 403c-10 5.8-22.9 3.6-30.3-5.3-16.2-19.4-33.3-41.6-42.2-65.7-4-10.9.4-23.2 10.5-29.1l33.3-16.8c-3.9-20.9-3.9-42.4 0-63.4L12 205.8c-10.1-5.8-14.6-18.1-10.5-29 8.9-24.2 26-46.4 42.2-65.8 7.4-8.9 20.2-11.1 30.3-5.3l29.1 16.8c16-13.7 34.6-24.6 54.9-31.7V57.1c0-11.5 8.2-21.5 19.6-23.5 24.6-4.2 50.5-4.4 76-.1 11.5 2 20 11.9 20 23.6v33.6c20.3 7.2 38.9 18 54.9 31.7l29.1-16.8c10-5.8 22.9-3.6 30.3 5.3 16.2 19.4 33.2 41.6 42.1 65.8 4 10.9.1 23.2-10 29.1l-33.7 16.8c3.9 21 3.9 42.5 0 63.5zm-117.6 21.1c59.2-77-28.7-164.9-105.7-105.7-59.2 77 28.7 164.9 105.7 105.7zm243.4 182.7l-8.2 14.3c-3 5.3-9.4 7.5-15.1 5.4-11.8-4.4-22.6-10.7-32.1-18.6-4.6-3.8-5.8-10.5-2.8-15.7l8.2-14.3c-6.9-8-12.3-17.3-15.9-27.4h-16.5c-6 0-11.2-4.3-12.2-10.3-2-12-2.1-24.6 0-37.1 1-6 6.2-10.4 12.2-10.4h16.5c3.6-10.1 9-19.4 15.9-27.4l-8.2-14.3c-3-5.2-1.9-11.9 2.8-15.7 9.5-7.9 20.4-14.2 32.1-18.6 5.7-2.1 12.1.1 15.1 5.4l8.2 14.3c10.5-1.9 21.2-1.9 31.7 0l8.2-14.3c3-5.3 9.4-7.5 15.1-5.4 11.8 4.4 22.6 10.7 32.1 18.6 4.6 3.8 5.8 10.5 2.8 15.7l-8.2 14.3c6.9 8 12.3 17.3 15.9 27.4h16.5c6 0 11.2 4.3 12.2 10.3 2 12 2.1 24.6 0 37.1-1 6-6.2 10.4-12.2 10.4h-16.5c-3.6 10.1-9 19.4-15.9 27.4l8.2 14.3c3 5.2 1.9 11.9-2.8 15.7-9.5 7.9-20.4 14.2-32.1 18.6-5.7 2.1-12.1-.1-15.1-5.4l-8.2-14.3c-10.4 1.9-21.2 1.9-31.7 0zM501.6 431c38.5 29.6 82.4-14.3 52.8-52.8-38.5-29.6-82.4 14.3-52.8 52.8z"></path></symbol><symbol id="ic-sync" viewBox="0 0 512 512"><path d="M370.72 133.28C339.458 104.008 298.888 87.962 255.848 88c-77.458.068-144.328 53.178-162.791 126.85-1.344 5.363-6.122 9.15-11.651 9.15H24.103c-7.498 0-13.194-6.807-11.807-14.176C33.933 94.924 134.813 8 256 8c66.448 0 126.791 26.136 171.315 68.685L463.03 40.97C478.149 25.851 504 36.559 504 57.941V192c0 13.255-10.745 24-24 24H345.941c-21.382 0-32.09-25.851-16.971-40.971l41.75-41.749zM32 296h134.059c21.382 0 32.09 25.851 16.971 40.971l-41.75 41.75c31.262 29.273 71.835 45.319 114.876 45.28 77.418-.07 144.315-53.144 162.787-126.849 1.344-5.363 6.122-9.15 11.651-9.15h57.304c7.498 0 13.194 6.807 11.807 14.176C478.067 417.076 377.187 504 256 504c-66.448 0-126.791-26.136-171.315-68.685L48.97 471.03C33.851 486.149 8 475.441 8 454.059V320c0-13.255 10.745-24 24-24z"></path></symbol><symbol id="ic-clipboard" viewBox="0 0 384 512"><path d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm121.2 231.8l-143 141.8c-4.7 4.7-12.3 4.6-17-.1l-82.6-83.3c-4.7-4.7-4.6-12.3.1-17L99.1 285c4.7-4.7 12.3-4.6 17 .1l46 46.4 106-105.2c4.7-4.7 12.3-4.6 17 .1l28.2 28.4c4.7 4.8 4.6 12.3-.1 17z"></path></symbol><symbol id="ic-lock" viewBox="0 0 448 512"><path d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z"></path></symbol><symbol id="ic-award" viewBox="0 0 384 512"><path d="M97.12 362.63c-8.69-8.69-4.16-6.24-25.12-11.85-9.51-2.55-17.87-7.45-25.43-13.32L1.2 448.7c-4.39 10.77 3.81 22.47 15.43 22.03l52.69-2.01L105.56 507c8 8.44 22.04 5.81 26.43-4.96l52.05-127.62c-10.84 6.04-22.87 9.58-35.31 9.58-19.5 0-37.82-7.59-51.61-21.37zM382.8 448.7l-45.37-111.24c-7.56 5.88-15.92 10.77-25.43 13.32-21.07 5.64-16.45 3.18-25.12 11.85-13.79 13.78-32.12 21.37-51.62 21.37-12.44 0-24.47-3.55-35.31-9.58L252 502.04c4.39 10.77 18.44 13.4 26.43 4.96l36.25-38.28 52.69 2.01c11.62.44 19.82-11.27 15.43-22.03zM263 340c15.28-15.55 17.03-14.21 38.79-20.14 13.89-3.79 24.75-14.84 28.47-28.98 7.48-28.4 5.54-24.97 25.95-45.75 10.17-10.35 14.14-25.44 10.42-39.58-7.47-28.38-7.48-24.42 0-52.83 3.72-14.14-.25-29.23-10.42-39.58-20.41-20.78-18.47-17.36-25.95-45.75-3.72-14.14-14.58-25.19-28.47-28.98-27.88-7.61-24.52-5.62-44.95-26.41-10.17-10.35-25-14.4-38.89-10.61-27.87 7.6-23.98 7.61-51.9 0-13.89-3.79-28.72.25-38.89 10.61-20.41 20.78-17.05 18.8-44.94 26.41-13.89 3.79-24.75 14.84-28.47 28.98-7.47 28.39-5.54 24.97-25.95 45.75-10.17 10.35-14.15 25.44-10.42 39.58 7.47 28.36 7.48 24.4 0 52.82-3.72 14.14.25 29.23 10.42 39.59 20.41 20.78 18.47 17.35 25.95 45.75 3.72 14.14 14.58 25.19 28.47 28.98C104.6 325.96 106.27 325 121 340c13.23 13.47 33.84 15.88 49.74 5.82a39.676 39.676 0 0 1 42.53 0c15.89 10.06 36.5 7.65 49.73-5.82zM97.66 175.96c0-53.03 42.24-96.02 94.34-96.02s94.34 42.99 94.34 96.02-42.24 96.02-94.34 96.02-94.34-42.99-94.34-96.02z"></path></symbol><symbol id="ic-phone" viewBox="0 0 512 512"><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path></symbol><symbol id="ic-mail" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></symbol><symbol id="ic-globe" viewBox="0 0 496 512"><path d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"></path></symbol><symbol id="ic-pin" viewBox="0 0 384 512"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></symbol><symbol id="ic-chart" viewBox="0 0 512 512"><path d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"></path></symbol><symbol id="ic-bolt" viewBox="0 0 320 512"><path d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"></path></symbol><symbol id="ic-check" viewBox="0 0 512 512"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></symbol><symbol id="ic-arrow" viewBox="0 0 448 512"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></symbol><symbol id="ic-whatsapp" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></symbol></svg>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="CCBees home"><svg viewBox="0 0 46 46" width="46" height="46" xmlns="http://www.w3.org/2000/svg" class="mark">
+<defs><linearGradient id="hgL46" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC83D"/><stop offset="1" stop-color="#D98E04"/></linearGradient></defs>
+<g stroke="#16213E" stroke-width="0.92" stroke-linecap="round" fill="none">
+<path d="M 19.78 10.9296 C 15.64 6.8034000000000034, 14.26 2.994600000000002, 15.870000000000001 0.13800000000000168"/>
+<path d="M 26.22 10.9296 C 30.36 6.8034000000000034, 31.740000000000002 2.994600000000002, 30.13 0.13800000000000168"/></g>
+<circle cx="15.870000000000001" cy="-0.17939999999999756" r="1.38" fill="#16213E"/>
+<circle cx="30.13" cy="-0.17939999999999756" r="1.38" fill="#16213E"/>
+<path d="M23.00,9.66L36.74,17.60L36.74,33.47L23.00,41.40L9.26,33.47L9.26,17.59Z" fill="url(#hgL46)"/>
+<path d="M23.00,9.66L36.74,17.60L36.74,33.47L23.00,41.40L9.26,33.47L9.26,17.59Z" fill="none" stroke="#16213E" stroke-width="1.104" stroke-linejoin="round"/>
+<path d="M 13.1606 25.8474 A 9.8394 9.8394 0 0 1 32.8394 25.8474" fill="none" stroke="#16213E" stroke-width="1.656" stroke-linecap="round"/>
+<rect x="10.6214" y="25.53" width="5.3958" height="7.935" rx="2.0631" fill="#16213E"/>
+<rect x="29.9828" y="25.53" width="5.3958" height="7.935" rx="2.0631" fill="#16213E"/>
+<path d="M 32.6807 33.465 C 32.6807 37.9086, 26.174 38.8608, 23.3174 38.8608" fill="none" stroke="#16213E" stroke-width="1.472" stroke-linecap="round"/>
+<circle cx="22.6826" cy="38.8608" r="1.587" fill="#16213E"/></svg>cc<b>bees</b></a>
+    <nav class="nav" id="nav">
+      <a href="#services">Services</a>
+      <a href="#advantage">Why us</a>
+      <a href="#industries">Industries</a>
+      <a href="#pricing">Engagement</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary hdr-cta" href="tel:+919849759754"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-phone" xlink:href="#ic-phone"/></svg> Call now</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-layers" xlink:href="#ic-layers"/></svg></button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="hero-pill"><span class="dot"></span>Visakhapatnam, India · Since day one</span>
+      <h1>A hive of trained agents for every <span>customer conversation</span>.</h1>
+      <p class="hero-sub">CCBees runs your inbound support, outbound sales and lead generation — so you win more customers and keep the ones you have.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#contact"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-arrow" xlink:href="#ic-arrow"/></svg> Talk to us</a>
+        <a class="btn btn-ghost" href="#services">Explore services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>24×7</b><span>Always-on operations</span></div>
+        <div class="stat"><b>7</b><span>Industries served</span></div>
+        <div class="stat"><b>AI-assisted</b><span>Smarter every call</span></div>
+        <div class="stat"><b>2–4 wks</b><span>To go live</span></div>
+      </div>
+    </div>
+    <div class="hive" aria-hidden="true">
+      <div class="cell c-honey c1"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-headset" xlink:href="#ic-headset"/></svg></div>
+      <div class="cell c-ink c2"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-bullhorn" xlink:href="#ic-bullhorn"/></svg></div>
+      <div class="cell c-ink c3"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-chat" xlink:href="#ic-chat"/></svg></div>
+      <div class="cell c-honey c4"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-ai" xlink:href="#ic-ai"/></svg></div>
+      <div class="cell c-ink c5"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-funnel" xlink:href="#ic-funnel"/></svg></div>
+      <div class="cell c-ink c6"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-chart" xlink:href="#ic-chart"/></svg></div>
+    </div>
+  </div>
+</section>
+
+<div class="trusted">
+  <div class="wrap">
+    <small>Trusted across</small>
+    <span class="chip">Airtel</span><span class="chip">IndusInd Bank — Insurance</span><span class="chip">Spandana · Govt. of AP</span><span class="chip">EIPL Real Estate</span><span class="chip">National Public School</span>
+  </div>
+</div>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>One partner for the whole customer lifecycle</h2>
+      <p>From the first sales call to lifelong support — voice and digital, inbound and outbound, all under one roof.</p>
+    </div>
+    <div class="grid g3 svc reveal">
+      <article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-support" xlink:href="#ic-support"/></svg></div><h3>Inbound support</h3><p>Customer care, helpdesk, order-taking and complaint handling — every call answered in your brand's voice.</p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-bullhorn" xlink:href="#ic-bullhorn"/></svg></div><h3>Outbound sales</h3><p>Telesales, cross-sell, renewals and win-back campaigns that turn cold lists into booked revenue.</p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-funnel" xlink:href="#ic-funnel"/></svg></div><h3>Lead generation</h3><p>Prospecting, qualification and appointment-setting that fill your pipeline with sales-ready leads.</p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-headset" xlink:href="#ic-headset"/></svg></div><h3>Customer support</h3><p>Dedicated 24/7 teams on voice, chat and email, backed by ticketing and clear escalation paths.</p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-chat" xlink:href="#ic-chat"/></svg></div><h3>Omnichannel CX</h3><p>Voice, live chat, email, WhatsApp, SMS and social — one consistent experience, one unified view.</p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-layers" xlink:href="#ic-layers"/></svg></div><h3>Back-office</h3><p>Data entry, verification, order processing and other repeatable operations, handled accurately.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="advantage">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why partner with us</span>
+      <h2>The CCBees advantage</h2>
+      <p>A large, always-on, AI-assisted team built to win new customers and keep existing ones.</p>
+    </div>
+    <div class="grid g3 reveal">
+      <article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-users" xlink:href="#ic-users"/></svg></div><h3>Large tele-caller pool</h3><p>A deep bench of trained tele-executives, ready to staff any campaign and scale fast.</p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-clock" xlink:href="#ic-clock"/></svg></div><h3>24×7 operations</h3><p>Round-the-clock shifts cover peak hours, holidays and every time zone — no missed calls.</p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-ai" xlink:href="#ic-ai"/></svg></div><h3>AI-assisted calling</h3><p>AI prompts, next-best-action and call insights help agents say the right thing and convert more.</p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-rupee" xlink:href="#ic-rupee"/></svg></div><h3>Lower cost</h3><p>Save 40–60% versus an in-house team — no hiring, infrastructure or attrition overhead.</p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-rocket" xlink:href="#ic-rocket"/></svg></div><h3>Fast to launch</h3><p>Go live in 2–4 weeks with agents, scripts, dialer and CRM ready to perform.</p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-expand" xlink:href="#ic-expand"/></svg></div><h3>Scale on demand</h3><p>Add or reduce seats with seasons and campaigns — pay only for what you use.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="industries">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Sectors we serve</span>
+      <h2>Domain-aware teams for your industry</h2>
+      <p>Agents tuned to the rules and rhythms of your sector — including EV charging networks and charge-point operators.</p>
+    </div>
+    <div class="grid g4 reveal">
+      <article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-signal" xlink:href="#ic-signal"/></svg></div><h3>Telecom</h3><p>Activations, plan sales & retention calling.</p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-shield" xlink:href="#ic-shield"/></svg></div><h3>BFSI & Insurance</h3><p>Policy sales, renewals & KYC verification.</p></article><article class="card ev"><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-ev" xlink:href="#ic-ev"/></svg></div><h3>EV Charging</h3><p>Driver helpline & charger-uptime support for charge-point operators.<span class="tag">New</span></p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-building" xlink:href="#ic-building"/></svg></div><h3>Real Estate</h3><p>Site-visit booking & buyer follow-ups.</p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-edu" xlink:href="#ic-edu"/></svg></div><h3>Education</h3><p>Admissions counselling & parent helpdesk.</p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-gov" xlink:href="#ic-gov"/></svg></div><h3>Public Sector</h3><p>Citizen helplines & scheme awareness.</p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-cart" xlink:href="#ic-cart"/></svg></div><h3>Retail & E-commerce</h3><p>Order support, COD confirmation & customer care.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="pricing">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">How we work together</span>
+      <h2>Flexible engagement models</h2>
+      <p>Pick the commercial model that fits your goals — or combine them. No lock-in, no surprises.</p>
+    </div>
+    <div class="grid g4 models reveal">
+      <article class="card model feat"><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-usertie" xlink:href="#ic-usertie"/></svg></div><h3>Dedicated seats</h3><p>A team that works only on your account, billed per agent / shift.</p><div class="best">Best for ongoing support</div></article><article class="card model "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-share" xlink:href="#ic-share"/></svg></div><h3>Shared / pooled</h3><p>Agents shared across clients following your scripts — pay for usage.</p><div class="best">Best for low–medium volume</div></article><article class="card model "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-funnel" xlink:href="#ic-funnel"/></svg></div><h3>Per-lead / per-sale</h3><p>You pay for qualified leads or closed sales — performance-linked.</p><div class="best">Best for growth campaigns</div></article><article class="card model "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-clock" xlink:href="#ic-clock"/></svg></div><h3>Per-minute / per-call</h3><p>Metered pricing for variable inbound volume and overflow.</p><div class="best">Best for seasonal peaks</div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="process">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Getting started</span>
+      <h2>Live in 2–4 weeks</h2>
+      <p>A clear path from first conversation to a team that performs from week one.</p>
+    </div>
+    <div class="steps reveal">
+      <div class="step"><h3>Discover</h3><p>Understand your goals, processes, scripts and success metrics.</p></div><div class="step"><h3>Design</h3><p>Build the campaign, staffing plan, dialer setup and CRM workflow.</p></div><div class="step"><h3>Recruit & train</h3><p>Hand-pick and certify agents on your product and brand voice.</p></div><div class="step"><h3>Go live</h3><p>Launch a pilot, monitor closely and tune scripts in real time.</p></div><div class="step"><h3>Optimise</h3><p>Weekly reviews, QA feedback and scaling as results come in.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="quality">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">You can rely on us</span>
+      <h2>Quality, compliance & data security</h2>
+      <p>Trust is the foundation of every conversation we handle on your behalf.</p>
+    </div>
+    <div class="grid g4 reveal">
+      <article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-clipboard" xlink:href="#ic-clipboard"/></svg></div><h3>Quality assurance</h3><p>Call monitoring, calibration and scorecards on every agent's work.</p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-lock" xlink:href="#ic-lock"/></svg></div><h3>Data protection</h3><p>Controlled access and masking, aligned to India's DPDP norms.</p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-shield" xlink:href="#ic-shield"/></svg></div><h3>Compliant calling</h3><p>DND scrubbing, consent and regulatory adherence built into every campaign.</p></article><article class="card "><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-chart" xlink:href="#ic-chart"/></svg></div><h3>SLA governance</h3><p>Agreed KPIs on CSAT, conversion, AHT and resolution — reviewed weekly.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--ink" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="eyebrow">Let's talk</span>
+        <h2 style="font-size:clamp(1.9rem,4vw,2.7rem);font-weight:800;margin:12px 0 10px">Put our hive to work</h2>
+        <p style="color:var(--ink-soft);max-width:44ch">Tell us about your customers and goals — we'll design a contact center program that delivers from week one.</p>
+        <div class="c-list">
+          <a class="c-item" href="tel:+919849759754"><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-phone" xlink:href="#ic-phone"/></svg></div><div><small>Call us</small><b>+91 98497 59754</b></div></a>
+          <a class="c-item" href="mailto:askme@ccbees.in"><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-mail" xlink:href="#ic-mail"/></svg></div><div><small>Email</small><b>askme@ccbees.in</b></div></a>
+          <a class="c-item" href="https://wa.me/919849759754"><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-whatsapp" xlink:href="#ic-whatsapp"/></svg></div><div><small>WhatsApp</small><b>+91 98497 59754</b></div></a>
+          <div class="c-item"><div class="hex"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-pin" xlink:href="#ic-pin"/></svg></div><div><small>Visit</small><b>Visakhapatnam, Andhra Pradesh</b></div></div>
+        </div>
+      </div>
+      <div class="form reveal">
+        <h3>Request a callback</h3>
+        <p class="small">Fill this in and we'll get back within one business day.</p>
+        <form id="lead">
+          <div class="field"><label for="n">Name</label><input id="n" name="name" required placeholder="Your name"/></div>
+          <div class="field"><label for="co">Company</label><input id="co" name="company" placeholder="Company name"/></div>
+          <div class="field"><label for="ph">Phone</label><input id="ph" name="phone" required placeholder="Mobile number"/></div>
+          <div class="field"><label for="msg">What do you need?</label><textarea id="msg" name="message" rows="3" placeholder="e.g. outbound sales for 10 seats"></textarea></div>
+          <button class="btn btn-primary" type="submit"><svg class="ic" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><use href="#ic-arrow" xlink:href="#ic-arrow"/></svg> Send request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="brand"><svg viewBox="0 0 40 40" width="40" height="40" xmlns="http://www.w3.org/2000/svg" class="mark">
+<defs><linearGradient id="hgL40" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC83D"/><stop offset="1" stop-color="#D98E04"/></linearGradient></defs>
+<g stroke="#FFD27A" stroke-width="0.8" stroke-linecap="round" fill="none">
+<path d="M 17.2 9.504000000000003 C 13.6 5.916000000000004, 12.4 2.6040000000000063, 13.8 0.12000000000000455"/>
+<path d="M 22.8 9.504000000000003 C 26.4 5.916000000000004, 27.6 2.6040000000000063, 26.2 0.12000000000000455"/></g>
+<circle cx="13.8" cy="-0.15599999999999525" r="1.2" fill="#FFD27A"/>
+<circle cx="26.2" cy="-0.15599999999999525" r="1.2" fill="#FFD27A"/>
+<path d="M20.00,8.40L31.95,15.30L31.95,29.10L20.00,36.00L8.05,29.10L8.05,15.30Z" fill="url(#hgL40)"/>
+<path d="M20.00,8.40L31.95,15.30L31.95,29.10L20.00,36.00L8.05,29.10L8.05,15.30Z" fill="none" stroke="#FFD27A" stroke-width="0.96" stroke-linejoin="round"/>
+<path d="M 11.444 22.476000000000003 A 8.556 8.556 0 0 1 28.555999999999997 22.476000000000003" fill="none" stroke="#16213E" stroke-width="1.44" stroke-linecap="round"/>
+<rect x="9.236" y="22.200000000000003" width="4.692" height="6.8999999999999995" rx="1.7939999999999998" fill="#16213E"/>
+<rect x="26.072" y="22.200000000000003" width="4.692" height="6.8999999999999995" rx="1.7939999999999998" fill="#16213E"/>
+<path d="M 28.418 29.1 C 28.418 32.964, 22.759999999999998 33.792, 20.276 33.792" fill="none" stroke="#16213E" stroke-width="1.28" stroke-linecap="round"/>
+<circle cx="19.724" cy="33.792" r="1.38" fill="#16213E"/></svg>cc<b style="color:var(--honey-l)">bees</b></div>
+        <p style="max-width:34ch">Customer engagement &amp; call center solutions — inbound support, outbound sales and lead generation from Visakhapatnam.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#services">Services</a><a href="#advantage">Why us</a><a href="#industries">Industries</a><a href="#pricing">Engagement</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+919849759754">+91 98497 59754</a><a href="mailto:askme@ccbees.in">askme@ccbees.in</a><a href="https://www.ccbees.in">www.ccbees.in</a><span style="display:block;padding:5px 0">Visakhapatnam, AP</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 CCBees. All rights reserved.</span>
+      <span>Customer Engagement &amp; Call Center Solutions</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// mobile nav
+var burger=document.getElementById('burger'),nav=document.getElementById('nav');
+burger&&burger.addEventListener('click',function(){var o=nav.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+nav&&nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open')})});
+// reveal on scroll
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+// lead form -> mailto
+var f=document.getElementById('lead');
+f&&f.addEventListener('submit',function(e){
+  e.preventDefault();
+  var d=new FormData(f);
+  var subject=encodeURIComponent('Callback request — '+(d.get('name')||'')+(d.get('company')?' ('+d.get('company')+')':''));
+  var body=encodeURIComponent('Name: '+(d.get('name')||'')+'\nCompany: '+(d.get('company')||'')+'\nPhone: '+(d.get('phone')||'')+'\n\n'+(d.get('message')||''));
+  window.location.href='mailto:askme@ccbees.in?subject='+subject+'&body='+body;
+});
+</script>
+</body>
+</html>
